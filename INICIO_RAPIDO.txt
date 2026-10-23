@@ -1,0 +1,15 @@
+AR CALHAS — CADERNO DE CAIXA 2.0
+
+Node.js 24 ou superior.
+Na pasta do projeto:
+  npm ci
+  npm run build
+  npm start
+
+Abra http://127.0.0.1:4000
+Não há login. Por padrão só este computador pode acessar.
+Para outros aparelhos, leia docs/ACESSO-PRIVADO.md.
+
+Não publique a versão sem login em endereço aberto na internet.
+Preserve o banco antigo e o .env. Não use dados de exemplo por cima dos dados do cliente.
+Veja docs/ATUALIZAR.md para subir o código no GitHub e atualizar a instalação.

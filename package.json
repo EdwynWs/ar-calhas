@@ -1,0 +1,38 @@
+{
+  "name": "ar-calhas-financeiro",
+  "version": "2.0.0",
+  "description": "Caderno de caixa privado da AR Calhas",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "vite",
+    "server": "node --env-file-if-exists=.env --watch server/index.js",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "setup": "node --env-file-if-exists=.env server/setup.js",
+    "test": "node --test tests/*.test.js",
+    "backup": "node --env-file-if-exists=.env server/backup.js",
+    "test:e2e": "playwright test",
+    "test:all": "npm test && npm run build && npm run test:e2e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "prettier": "^3.9.10",
+    "vite": "^8.3.4"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
